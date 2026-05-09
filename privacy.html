@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Privacy Policy — AISearch BYOK</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+<header class="border-b border-slate-200">
+  <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/" class="font-semibold text-lg">AISearch <span class="text-indigo-600">BYOK</span></a>
+    <a href="/" class="text-sm text-slate-600 hover:text-slate-900">← Home</a>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-6 py-16 prose prose-slate">
+  <h1 class="text-3xl font-bold tracking-tight">Privacy policy</h1>
+  <p class="text-slate-500 mt-2">Last updated: <span id="date"></span></p>
+
+  <h2 class="text-xl font-semibold mt-10">What we collect</h2>
+  <p class="mt-3 text-slate-700 leading-relaxed">When you purchase a license, our payment processor (Lemon Squeezy) collects your name, email, billing address, and payment information needed to issue an invoice and process your order. We receive your name, email, country, and license key from Lemon Squeezy. We never receive your full payment card details.</p>
+
+  <h2 class="text-xl font-semibold mt-8">What the plugin collects</h2>
+  <p class="mt-3 text-slate-700 leading-relaxed">The AISearch BYOK plugin runs entirely inside your WordPress installation. It does not transmit your product data, customer data, or search queries to any server we control. The plugin contacts the Lemon Squeezy License API one time during activation, and weekly thereafter, to verify your license key is valid. The only information sent in those calls is your license key and the domain of your WordPress site.</p>
+
+  <h2 class="text-xl font-semibold mt-8">Third parties</h2>
+  <ul class="mt-3 list-disc pl-6 text-slate-700 leading-relaxed space-y-1">
+    <li><strong>Lemon Squeezy</strong> — payment processing, license issuance, tax remittance.</li>
+    <li><strong>OpenAI (or your chosen AI provider)</strong> — when the plugin generates embeddings, your product text and shopper queries are sent to OpenAI under <em>your</em> API key. This is direct between your WordPress and OpenAI; we never see this traffic.</li>
+    <li><strong>Cloudflare Pages</strong> — hosts this website. Cloudflare may log standard request data (IP, user agent) for abuse prevention.</li>
+  </ul>
+
+  <h2 class="text-xl font-semibold mt-8">Cookies</h2>
+  <p class="mt-3 text-slate-700 leading-relaxed">This website uses no cookies and no analytics scripts.</p>
+
+  <h2 class="text-xl font-semibold mt-8">Data requests</h2>
+  <p class="mt-3 text-slate-700 leading-relaxed">To request a copy of, correction to, or deletion of personal data we hold about you, email <a href="mailto:support@aisearchbyok.com" class="text-indigo-600 underline">support@aisearchbyok.com</a>. We respond within 30 days.</p>
+
+  <h2 class="text-xl font-semibold mt-8">Contact</h2>
+  <p class="mt-3 text-slate-700 leading-relaxed">Questions about this policy: <a href="mailto:support@aisearchbyok.com" class="text-indigo-600 underline">support@aisearchbyok.com</a></p>
+</main>
+
+<script>document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });</script>
+</body>
+</html>
